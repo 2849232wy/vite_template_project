@@ -1,0 +1,166 @@
+:root {
+  /** 头部高度 */
+  --header-h: 80px;
+
+  /** 页面内容容器宽度 */
+  --container-w: 1180px;
+
+  /** 当出现横向滚动条时，页面内容容器的边距 */
+  --container-space: 32px;
+
+  /** 基础字体大小(1rem对应的px) */
+  --text-base: 14px;
+
+  /** 标题字体大小 */
+  --text-title: 16px;
+
+  /* 行高 */
+  --line-height: 20px;
+
+  /** 基础字体 */
+  --font-base: PingFangSC-Regular, PingFang SC;
+
+  /** 标题字体 */
+  --font-title: PingFangSC-Medium, PingFang SC;
+
+  /** 数字字体 */
+  --font-number: PingFangSC-Semibold, PingFang SC;  
+
+  /** 字重 */
+  --font-weight: 400;
+
+  /** 标题字体颜色 */
+  --color-title: #323233;
+
+  /** 文本字体颜色 */
+  --color-text: #646566;
+
+  /* 占位文本字体颜色 */
+  --color-placeholder: #8d98a8;
+
+  /** 主题颜色 */
+  --color-theme: #295eff;
+  --color-danger: #f55245;
+  --color-success: #18a058;
+
+  /* 边框颜色 */
+  --color-border: #cacacc;
+
+  /** 灰色背景色 */
+  --color-bg: #fafbff;
+
+  /** 白色 */
+  --color-white: #fff;
+
+  /** 默认背景图样式 */
+  --bg-repeat: no-repeat;
+  --bg-position: 50% 50%;
+  --bg-size: cover;
+
+  --bg-styles: var(--bg-repeat) var(--bg-position) / var(--bg-size);
+
+  /** 过渡动画持续时间 */
+  --transition-duration: 0.3s;
+}
+
+:root {
+  font: var(--font-weight) inherit / var(--line-height) var(--font-base);
+  color: var(--color-text);
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+body {
+  position: relative;
+  font-size: var(--text-base);
+}
+
+/* .n-base-select-menu {
+  @apply rounded-8px;
+  box-shadow: 0 4px 20px 0 rgba(203, 203, 203, 0.3);
+}
+.n-base-select-option {
+  @apply !px-16px;
+}
+.n-base-select-option__content {
+  @apply flex-grow relative !overflow-visible;
+}
+.n-base-select-option ~ .n-base-select-option .n-base-select-option__content:after {
+  @apply absolute -top-10px left-0 w-full h-1px;
+  content: "";
+  background-color: var(--color-border);
+} */
+.n-base-select-menu {
+  padding: 0 4px;
+}
+.n-base-select-option:hover,
+.n-base-select-option--pending {
+  color: #295eff !important;
+}
+
+/* .n-data-table-table .n-data-table-th {
+  @apply px-16px py-14px;
+  font: var(--font-weight) var(--text-base) / var(--line-height) var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  border: none;
+}
+.n-data-table-table .n-data-table-td {
+  @apply px-16px py-22px;
+  font: var(--font-weight) var(--text-base) / var(--line-height) var(--font-base);
+  color: var(--color-title);
+  border: 1px solid #e6e9f5 !important;
+  border-right: none !important;
+}
+.n-data-table-table .n-data-table-tr:not(:nth-last-of-type(1)) .n-data-table-td {
+  border-bottom: none !important;
+}
+.n-data-table-table .n-data-table-td.n-data-table-td--last-col {
+  border: 1px solid #e6e9f5 !important;
+} */
+
+.n-progress-icon--as-text {
+  @apply pl-8px;
+  font: 500 var(--text-base) / var(--line-height) var(--font-title);
+}
+
+.n-dialog {
+  @apply !w-360px pt-32px pb-32px px-32px mt-20vh rounded-8px;
+}
+.n-dialog .n-base-close {
+  @apply hidden;
+}
+.n-dialog .n-dialog__title {
+  @apply block text-center text-18px leading-25px font-medium;
+  color: var(--color-title);
+}
+.n-dialog .n-dialog__title .n-base-icon {
+  @apply hidden;
+}
+.n-dialog .n-dialog__content {
+  @apply mt-8px mb-24px text-center text-14px leading-20px font-normal;
+  color: var(--color-title);
+}
+.n-dialog .n-dialog__action {
+  @apply justify-center;
+}
+.n-dialog .n-dialog__action .n-button {
+  @apply w-88px mr-0 h-32px rounded-4px;
+}
+.n-dialog .n-dialog__action .n-button ~ .n-button {
+  @apply ml-16px;
+}
+.n-dialog .n-dialog__action .n-button.n-button--default-type {
+  --n-border: 1px solid #8d98a8 !important;
+}
+
+.n-checkbox {
+  --border-radius: 50% !important;
+}
+
+.n-message-container--top {
+  top: 33% !important;
+}
+
+

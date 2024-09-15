@@ -1,0 +1,44 @@
+{
+  "name": "vite_project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "test": "vue-tsc -b && vite build --mode test",
+    "build": "vue-tsc -b && vite build --mode prod",
+    "dev:prod": "vite --mode prod",
+    "dev:test": "vite --mode test"
+  },
+  "dependencies": {
+    "@unocss/reset": "^0.62.3",
+    "axios": "^1.7.7",
+    "pinia": "^2.2.2",
+    "unplugin-auto-import": "^0.18.3",
+    "unplugin-vue-components": "^0.27.4",
+    "vfonts": "^0.0.3",
+    "vue": "^3.4.37",
+    "vue-i18n": "^10.0.1",
+    "vue-router": "^4.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5",
+    "@typescript-eslint/eslint-plugin": "^8.5.0",
+    "@typescript-eslint/parser": "^8.5.0",
+    "@vitejs/plugin-vue": "^5.1.2",
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-vue": "^9.28.0",
+    "naive-ui": "^2.39.0",
+    "pinia-plugin-persistedstate": "^4.0.1",
+    "prettier": "^3.3.3",
+    "sass-embedded": "^1.78.0",
+    "typescript": "^5.5.3",
+    "unocss": "^0.62.3",
+    "vite": "^5.4.1",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^2.0.29"
+  }
+}
